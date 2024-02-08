@@ -71,7 +71,7 @@ button:focus-visible {
 *, :root {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
 body {
@@ -86,3 +86,7 @@ body {
   background-color: #242424;
 }
 
+section {
+  height: 80%;
+  width: 100%;
+}

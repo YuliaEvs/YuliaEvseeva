@@ -2,6 +2,7 @@
     font-family: "Yeseva One", serif;
     font-weight: 400;
     font-style: normal;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +19,7 @@
 .logo-letter {
     opacity: 0;
     animation: fadeInOut 2s ease-in-out forwards;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px rgba(221, 221, 221, 0.8);
     font-size: 2rem; 
 }
   
@@ -73,14 +74,17 @@
   /* s */
   .logo-letter:nth-child(9) {
     animation-delay: 0.7s;
+    color: rgb(2, 152, 221);
   }
   /* e */
   .logo-letter:nth-child(10) {
     animation-delay: 0.8s;
+    color: rgb(2, 152, 221);
   }
   /* e */
   .logo-letter:nth-child(11) {
     animation-delay: 0.9s;
+    color: rgb(2, 152, 221);
   }
   /* v */
   .logo-letter:nth-child(12) {

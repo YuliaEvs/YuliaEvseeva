@@ -1,5 +1,8 @@
-import './App.css'
-import Header from './Components/Header'
+import './App.css';
+import Header from './Components/Header';
+import './script';
+import RunningLine from './Components/RunningLine';
+import BallPointer from './Components/BallPointer'
 
 function App() {
 
@@ -9,6 +12,8 @@ function App() {
       <div className='home-container'>
         <div className='home-wrap'>
           <Header/>
+          <RunningLine/>
+          <BallPointer/>
         </div>
       </div>
     </>

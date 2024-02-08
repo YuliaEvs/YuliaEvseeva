@@ -13,9 +13,9 @@ export default function Preloader() {
                 <div className="space">&nbsp;</div>
                 <div className="logo-letter">E</div>
                 <div className="logo-letter">v</div>
-                <div className="logo-letter">s</div>
-                <div className="logo-letter">e</div>
-                <div className="logo-letter">e</div>
+                <div className="logo-letter uniq">s</div>
+                <div className="logo-letter uniq">e</div>
+                <div className="logo-letter uniq">e</div>
                 <div className="logo-letter">v</div>
                 <div className="logo-letter">a</div>
             </div>

@@ -1,0 +1,32 @@
+.line-container {
+    display: block;
+    width: 100vw;
+    bottom: 350px;
+}
+
+#runningLine { 
+
+    position: absolute;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    font-size: 20px;
+    animation: runRight 10s linear infinite;
+}
+
+@keyframes runRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes runLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
