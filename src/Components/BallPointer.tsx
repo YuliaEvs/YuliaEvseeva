@@ -22,7 +22,7 @@ const BallPointer: React.FC = () => {
         };
     }, []);
 
-  return <div id='ballPointer'></div>;
+//   return <div id='ballPointer'></div>;
 };
 
 export default BallPointer;

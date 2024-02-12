@@ -9,7 +9,7 @@ header {
     
 }
 
-.logo-container:hover .submenu {
+.header-container:hover .submenu {
   display: block;
   padding-top: 55px;
 }

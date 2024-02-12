@@ -3,7 +3,7 @@ import './header.css'
 export default function Header() {
     return (
         <header>
-            <div className='logo-container'>
+            <div className='header-container'>
                 <div className='logo-wrapper'>
                     <div className="logo">Y</div>
                     <div className="logo">u</div>

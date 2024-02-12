@@ -30,9 +30,62 @@ setInterval(() => {
 
     return (
         <div className='line-container'>
-            <div id="runningLine">
-                I am just a line, but I can run 
+            <div className="runningLine firstLine">
+                <p>
+                    CSS
+                </p>
+                <p>
+                    JavaScript
+                </p>
+                <p>
+                    TypeScript
+                </p>
+                <p>
+                    React
+                </p>
+
+                <p>
+                    C#
+                </p>
+                <p>
+                    Java
+                </p>
+                <p>
+                    API
+                </p>
+                <p>
+                    and more...
+                </p>
             </div>
+
+            <div className="runningLine firstLine">
+                <p>
+                    CSS
+                </p>
+                <p>
+                    JavaScript
+                </p>
+                <p>
+                    TypeScript
+                </p>
+                <p>
+                    React
+                </p>
+
+                <p>
+                    C#
+                </p>
+                <p>
+                    Java
+                </p>
+                <p>
+                    API
+                </p>
+                <p>
+                    and more...
+                </p>
+            </div>
+
         </div>
     )
 }

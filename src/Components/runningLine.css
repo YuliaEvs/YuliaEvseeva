@@ -1,32 +1,55 @@
 .line-container {
-    display: block;
-    width: 100vw;
-    bottom: 350px;
-}
 
-#runningLine { 
+    overflow: hidden;
+    height: 65px;
+    position: relative;
+    top: 90%;
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      overflow: hidden;
+      width: 100%;
+      height: 65px;
+      transform: translate(100%, 0);
+  
+      p {
+        color: gray;
+        text-transform: uppercase;
+      }
 
-    position: absolute;
-    transform: translateY(-50%);
-    white-space: nowrap;
-    font-size: 20px;
-    animation: runRight 10s linear infinite;
-}
+    }
+  
+    animation-duration: 40s;
+  
+    .firstLine, .secondLine {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      animation: ticker 40s infinite linear forwards;
+    }
+  
+    .secondLine {
+        animation: 40s ticker 40s/2 infinite linear forwards;
+      }
 
-@keyframes runRight {
+  }
+  
+  @keyframes ticker {
     0% {
-        transform: translateX(100%);
+      transform: translate(100%, 0);
     }
+  
+    50% {
+      transform: translate(0, 0);
+    }
+  
     100% {
-        transform: translateX(-100%);
+      transform: translate(-100%, 0);
     }
-}
-
-@keyframes runLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}
+  }

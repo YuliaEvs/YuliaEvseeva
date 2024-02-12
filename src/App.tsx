@@ -10,11 +10,11 @@ function App() {
   return (
     <>
       <div className='home-container'>
-        <div className='home-wrap'>
+        {/* <div className='home-wrap'> */}
           <Header/>
           <RunningLine/>
           <BallPointer/>
-        </div>
+        {/* </div> */}
       </div>
     </>
   )
