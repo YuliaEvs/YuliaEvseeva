@@ -41,4 +41,11 @@ export const projectData = [
         Image: '',
     },
 
+    {
+        id: 7,
+        title: "Tic-Tac-Toe",
+        discription: "Comming Soon...",
+        Image: '',
+    },
+
 ]

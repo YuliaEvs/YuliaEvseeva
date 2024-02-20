@@ -9,13 +9,15 @@ header {
     
 }
 
-.header-container:hover .submenu {
+.header-container:hover p {
   display: block;
-  padding-top: 55px;
+  padding-top: 15px;
+  text-shadow: 0 0 10px rgba(221, 221, 221, 0.8);
 }
 
 .navbar li:hover .submenu {
-    display: block;
+  display: block;
+
 }
 
 .logo-wrapper{
@@ -44,7 +46,7 @@ header {
     display: none;
     position: absolute;
     font-size: 0.8rem;
-    padding-top: 10px;
+    padding-top: 15px;
 
 }
 

@@ -30,7 +30,7 @@ setInterval(() => {
 
     return (
         <div className='line-container'>
-            <div className="runningLine firstLine">
+            <div className="firstLine">
                 <p>
                     CSS
                 </p>
@@ -58,7 +58,7 @@ setInterval(() => {
                 </p>
             </div>
 
-            <div className="runningLine firstLine">
+            <div className="secondLine">
                 <p>
                     CSS
                 </p>
