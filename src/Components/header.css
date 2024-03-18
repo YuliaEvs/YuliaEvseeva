@@ -20,10 +20,13 @@ header {
   text-shadow: 0 0 10px rgba(221, 221, 221, 0.8);
 }
 
-.navbar li:hover .submenu {
-  display: block;
-
+.navbar {
+  display: flex;
 }
+
+/* .navbar li:hover .submenu {
+  display: block;
+} */
 
 .logo-wrapper{
   display: flex;

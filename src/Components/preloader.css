@@ -1,27 +1,25 @@
 .preloader {
-  font-family: "Big Shoulders Stencil Display", sans-serif;
-  font-weight: 800;
-  font-size: 6rem;
-  font-style: normal;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-
 }
   
 .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-letter {
-    opacity: 0;
-    animation: fadeInOut 2s ease-in-out forwards;
-    text-shadow: 0 0 10px rgba(221, 221, 221, 0.8);
-    font-size: 2rem; 
+  opacity: 0;
+  font-family: "Big Shoulders Stencil Display", sans-serif;
+  font-size: 10rem;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  animation: fadeInOut 2s ease-in-out forwards;
+  text-shadow: 0 0 10px rgba(221, 221, 221, 0.8);
 }
   
 @keyframes fadeInOut {
