@@ -36,8 +36,9 @@
     }
   
     .secondLine {
-        animation: 40s ticker 40s/2 infinite linear forwards;
-      }
+      animation: ticker 40s infinite linear forwards;
+      animation-delay: 20s;
+    }
 
   }
   

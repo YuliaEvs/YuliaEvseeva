@@ -72,15 +72,15 @@ button:focus-visible {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
-
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
+  font-family: "Wire One", sans-serif;
+  font-weight: bold;
   font-style: normal;
-
+  font-size: 3rem;
+  font-optical-sizing: auto;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -90,3 +90,4 @@ section {
   height: 80%;
   width: 100%;
 }
+
