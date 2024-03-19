@@ -1,7 +1,7 @@
 .line-container {
-
   overflow: hidden;
-  height: 65px;
+  height: 100px;
+  font-size: 5rem;
   position: relative;
   top: 90%;
     div {
@@ -11,7 +11,7 @@
       align-items: center;
       overflow: hidden;
       width: 100%;
-      height: 65px;
+      height: 100%;
       transform: translate(100%, 0);
   
       p {
@@ -21,8 +21,8 @@
       }
 
     }
-  
-    animation-duration: 40s;
+/*   
+    animation-duration: 100s; */
   
     .firstLine, .secondLine {
       display: flex;
@@ -32,12 +32,12 @@
       position: absolute;
       top: 0;
       right: 0;
-      animation: ticker 40s infinite linear forwards;
+      animation: ticker 50s infinite linear forwards;
     }
   
     .secondLine {
-      animation: ticker 40s infinite linear forwards;
-      animation-delay: 20s;
+      animation: ticker 50s infinite linear forwards;
+      animation-delay: 25s;
     }
 
   }

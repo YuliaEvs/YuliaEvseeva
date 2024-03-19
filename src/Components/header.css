@@ -1,12 +1,12 @@
 header {
-    position: absolute;
-    top: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 3rem 0 3rem;
-    
+  position: absolute;
+  top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  padding: 0 3rem 0 3rem;
 }
 
 .header-container {
@@ -18,45 +18,57 @@ header {
   display: block;
   padding-top: 15px;
   text-shadow: 0 0 10px rgba(221, 221, 221, 0.8);
+  height: fit-content;
 }
 
 .navbar {
   display: flex;
 }
 
-/* .navbar li:hover .submenu {
-  display: block;
-} */
-
 .logo-wrapper{
   display: flex;
 }
 
-.logo, .logo-uniq {
-  text-shadow: 0 0 4px rgba(221, 221, 221, 0.8);
+.logo {
   font-size: 3rem; 
   font-family: "Big Shoulders Stencil Display", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 800;
-  font-style: normal;
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
 }
 
-.logo {
-    animation: fadeInOut 20s ease-in-out infinite;
+.logo-hover {
+  display: none;
+}
+
+.logo-hover:hover {
+  display: block;
+  /* transform: perspective(600px) rotateY(80deg) rotateX(10deg);
+  transition: transform 0.1s ease-in-out; */
 }
   
 .menu {
-    display: flex;
-    gap: 50px;
-    font-weight: 500;
+  display: flex;
+  gap: 50px;
+  font-weight: 500;
 }
 
 .submenu {
-    display: none;
-    position: absolute;
-    font-size: 0.8rem;
-    padding-top: 15px;
-
+  display: none;
+  position: absolute;
+  font-size: 1rem;
+  margin-top: 3rem;
 }
 
 a {
@@ -72,30 +84,26 @@ a:hover {
   color: white;
   transition: opacity 1s ease;
   text-shadow: 0 0 10px rgba(221, 221, 221, 0.8);
-
 }
 
-a:hover .submenu {
+a:hover .submenu:hover {
   display: block;
-  
+  padding-top: 100px;
 }
 
 .changeMode {
-
-  background-color: transparent;
+ 
 }
 
-.mode-icon {
+/* .mode-icon {
   display: flex;
   align-items: center;
   margin-right: 22rem;
 
-}
+} */
 
-button {
+/* button {
   border: none;
-  
-
 }
 
 button:hover {
@@ -104,4 +112,4 @@ button:hover {
 
 svg {
   background-color: rgb(250, 250, 250);
-}
+} */

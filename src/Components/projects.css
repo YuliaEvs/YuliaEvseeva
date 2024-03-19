@@ -1,95 +1,14 @@
 .projects-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
+    
     
 }
 
 .projects-wrapper {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-    background-color: transparent;
+   
 }
 
 .card {
-    border-radius: 1rem; 
-    display: flex;
-    position: relative;
-    width: 230px;
-    height: 230px;
-    perspective: 1000px;
-    transition: transform 1s ease-in-out;
-    transform-style: preserve-3d;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+   
 }
-
-.flip-down {
-    /* transform: perspective(1000px) rotateX(180deg); */
-    /* transform: rotateX(0); */
-}
-
-.flip-down:hover {
-    /* transform: rotateX(-90deg) translateY(50px); */
-    /* transform: rotateX(-90deg); */
-}
-
-.flip-up {
-    /* transform: rotateX(0); */
-}
-
-.flip-up:hover {
-    /* transform: rotateX(90deg); */
-}
-
-.flip-right {
-    /* transform: rotateY(0); */
-}
-
-.flip-right:hover {
-    /* transform: rotateY(90deg);
-    .back {
-        visibility: visible;
-        transform: rotateY(-90deg), translate(-60px);
-    }
-    .face {
-        visibility: hidden;
-        transform: rotateY(90deg), translate(60px);
-    } */
-}
-
-.flip-left {
-    /* transform: rotateY(0); */
-}
-
-.flip-left:hover {
-    /* transform: rotateY(-90deg); */
-}
-
-.card:hover .back {
-    /* background-color: rgb(68, 138, 83);
-    visibility: visible; */
-    transform: rotateY(180deg);
-}
-
-.face {
-    background-color: rgb(68, 138, 83);
-    color: rgb(238, 238, 238);
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    justify-content: end;
-}
-
-.back {
-    visibility: hidden;
-    background-color: rgba(68, 138, 83, 0.705);  
-}
-
 
 
