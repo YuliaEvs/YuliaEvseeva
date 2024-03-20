@@ -1,6 +1,7 @@
 .projects-container {
-    
-    
+    position: relative;
+    display: flex;
+    width: 100vw;
 }
 
 .projects-wrapper {

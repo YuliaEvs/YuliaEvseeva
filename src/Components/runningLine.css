@@ -1,4 +1,5 @@
 .line-container {
+  z-index: 3;
   overflow: hidden;
   height: 100px;
   font-size: 5rem;
@@ -21,8 +22,6 @@
       }
 
     }
-/*   
-    animation-duration: 100s; */
   
     .firstLine, .secondLine {
       display: flex;

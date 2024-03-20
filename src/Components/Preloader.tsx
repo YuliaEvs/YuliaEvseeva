@@ -4,7 +4,7 @@ export default function Preloader() {
     return(
 
         <div className="preloader">
-            <div className='logo-container'>
+            <div className='preloader-logo-container'>
                 <div className="logo-letter">Y</div>
                 <div className="logo-letter">U</div>
                 <div className="logo-letter">L</div>

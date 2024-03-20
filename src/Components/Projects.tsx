@@ -5,7 +5,7 @@ export default function Projects() {
         <div className='projects-container'>
         <div className='projects-wrapper'>
             <div className="card" id='p1'>
-
+                I am a project #1
             </div>
             <div className="card" id='p2'>
 

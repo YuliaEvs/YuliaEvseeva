@@ -1,8 +1,8 @@
-import './App.css';
+import './index.css';
 import Header from './Components/Header';
-import './script';
+import Hero from './Components/Hero';
 import RunningLine from './Components/RunningLine';
-import BallPointer from './Components/BallPointer';
+import Contact from './Components/Contact';
 import Projects from './Components/Projects';
 
 function App() {
@@ -11,12 +11,24 @@ function App() {
   return (
     <>
       <div className='home-container'>
-        {/* <div className='home-wrap'> */}
-          <Header/>
+        <Header/>
+
+        <section id="hero">
+          <Hero/>
+        </section>
+        
+        <section id='projects'>
           <Projects/>
+        </section>
+            
+        <section id='running-line'>
           <RunningLine/>
-          <BallPointer/>
-        {/* </div> */}
+        </section>
+        
+        <section id='contact'>
+          <Contact/>
+        </section>
+        
       </div>
     </>
   )

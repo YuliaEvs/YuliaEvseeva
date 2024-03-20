@@ -3,36 +3,48 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
+  background-color: #242424;
 }
   
-.logo-container {
+.preloader-logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  animation-timing-function: cubic-bezier(0.2, 0.8, 0.5, 1); /* Custom cubic-bezier to start slow and end fast */
+  animation: fallBackDown 1s forwards;
+  animation-timing-function: cubic-bezier(0.1, 0.6, 1, 0); /* Custom cubic-bezier to start slow and end fast */
   animation: moveToUser 1.5s forwards;
-  animation-delay: 1s;
+  animation-delay: 1.2s;
   }
   
+  @keyframes fallBackDown {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    
+    100% {
+      transform: scale(-1);
+    }
+  }
+
   @keyframes moveToUser {
     0% {
       transform: translateY(0) scale(1);
     }
     
     100% {
-      transform: scale(3);
+      transform: scale(20);
     }
   }
   
 .logo-letter {
   opacity: 0;
   font-family: "Big Shoulders Stencil Display", sans-serif;
-  font-size: 12rem;
-  font-optical-sizing: auto;
+  font-size: 10rem;
   font-weight: 800;
   font-style: normal;
-  animation: fadeInOut 1.5s ease-in-out forwards;
+  animation: fadeInOut 1.5s ease forwards;
   text-shadow:
     0 1px 0 #ccc,
     0 2px 0 #c9c9c9,

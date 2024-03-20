@@ -1,15 +1,6 @@
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* @media () {
+
 } */
 
 
@@ -17,10 +8,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
+  min-height: 100vh;
+  overflow-x: hidden;
   font-family: "Wire One", sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -28,22 +21,15 @@ body {
   font-optical-sizing: auto;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-}
-
-section {
-  height: 80%;
-  width: 100%;
+  background-color: linear-gradient(#242424, #00213b);
 }
 
 .home-container {
-  /* background-color: rgb(27, 38, 44); */
-  opacity: 0;
+  opacity: 1;
   width: 100vw;
   height: 100vh;
   animation: fadeIn 0.1s ease-in-out forwards;
   box-shadow: inset 0 0 10px #000000;
-  
 }
 
 @keyframes fadeIn {
@@ -54,4 +40,13 @@ section {
   to {
     opacity: 1;
   }
+}
+
+section {
+  width: 100%;
+  height: 90%;
+}
+
+#hero {
+  background-color: #00213b;
 }
