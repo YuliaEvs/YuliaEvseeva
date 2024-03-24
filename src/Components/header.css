@@ -4,19 +4,21 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 5rem;
-  padding: 0 5rem 0 5rem;
-  background-color: #00213b;
+  height: 10rem;
+  padding: 0 5rem 0 6rem;
+  background-color: none;
 }
 
 .header-logo-container {
   cursor: pointer;
+  padding: 0.75rem;
 }
 
 .header-logo-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
+  color: rgb(221, 232, 247);
   font-size: 2rem; 
   font-family: "Big Shoulders Stencil Display", sans-serif;
   font-weight: 600;
@@ -24,38 +26,33 @@ header {
 
 .header-logo-wrapper::after {
   content: "YE";
-  transition: content 1s ease;
 }
 
 .header-logo-wrapper:hover::after,
 .header-logo-wrapper:active::after {
   content: "YULIA EVSEEVA (You-lee-ya)";
-  transition: content 1s ease-in-out;
 }
 
 .navbar {
+  height: inherit;
   display: flex;
-  justify-items: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 3rem;
+  width: 20rem;
+  color: rgb(221, 232, 247);
 }
 
 .menu-content {
-  height: 100vh;
-  width: 30%;
+  display: flex;
+  height: 70vh;
+  width: 50rem;
   background-color: rgb(128, 0, 90);
-  z-index: 999;
-  visibility: hidden;
-  top: 0;
-  right: 0;
-}
-
-.menu-content.active {
-  visibility: visible;
+  margin-top: 300%;
+  transition: down 0.5s ease-in-out;
 }
 
 .menu {
-  display: flex;
+  
   gap: 50px;
   font-weight: 500;
 }
@@ -81,54 +78,55 @@ a:hover .submenu:hover {
   color: white;
   transition: opacity 1s ease;
   text-shadow: 0 0 10px rgba(221, 221, 221, 0.8);
-  padding-top: 100px;
   visibility: visible;
 }
 
 .changeMode {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
   cursor: pointer;
-  border: none;
-  background-color: transparent;
   display: flex;
-  align-items: center;
-  justify-items: center;
-  flex-direction: column;
+  justify-content: center;
+  align-self: flex-end;
+  width: 7rem;
+  height: 10rem;
+  background-color: transparent;
+  border: none;
+}
 
+.lamp {
+  background-color: transparent;
+  border: none;
 }
 
 .material-symbols-rounded {
   font-size: 2rem;
+  cursor: pointer;
+  color: rgb(221, 232, 247);
 }
 
 .material-symbols-rounded:hover {
-  border-left: 50px solid transparent; 
-  border-right: 50px solid transparent; 
-  border-bottom: 50px solid rgb(255, 251, 198)
+  border-top: 48px solid transparent;
+  border-left: 30px solid transparent; 
+  border-right: 30px solid transparent; 
+  border-bottom: 50px solid rgb(255, 251, 198);
+  text-shadow: 0 0 10px rgba(221, 221, 221, 0.8);
 }
 
-.material-symbols-rounded:hover::after,
-.material-symbols-rounded:active::after {
-  border-left: 50px solid transparent; 
-  border-right: 50px solid transparent; 
-  border-bottom: 50px solid rgb(255, 251, 198)
+.nav-burger {
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .nav-burger-wrap {
-  
-  opacity: 1;
-  width: 2.5rem;
-  height: 2.5rem;
-  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
   flex-direction: column;
   justify-content: space-around;
   align-items: stretch;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   display: flex;
-  position: relative;
 }
 
 .burger-line-1,
@@ -136,9 +134,6 @@ a:hover .submenu:hover {
   background-color: rgb(221, 232, 247);
   width: 100%;
   height: 2px;
-  /* transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  transform-style: preserve-3d; */
-  transition: background-color 0.3s ease-in-out;
 }
 
 .nav-burger-wrap.active .burger-line-1 {
