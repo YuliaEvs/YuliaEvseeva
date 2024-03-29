@@ -1,0 +1,17 @@
+.about-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 5rem 0 5rem;
+    font-size: 2rem;
+    border: 1px solid green;
+    display: flex;
+}
+
+.about-content-container {
+    width: 350px;
+    justify-content: flex-start;
+}
+
+.toggleSubmenu {
+    visibility: hidden;
+}

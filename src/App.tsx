@@ -4,6 +4,7 @@ import Hero from './Components/Hero';
 import RunningLine from './Components/RunningLine';
 import Contact from './Components/Contact';
 import Projects from './Components/Projects';
+import About from './Components/About';
 
 function App() {
 
@@ -17,13 +18,17 @@ function App() {
           <Hero/>
         </section>
         
+        <section id='about'>
+          <About/>
+        </section>
+
         <section id='projects'>
           <Projects/>
         </section>
             
-        <section id='running-line'>
+        <div id='running-line'>
           <RunningLine/>
-        </section>
+        </div>
         
         <section id='contact'>
           <Contact/>
