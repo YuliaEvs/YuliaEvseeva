@@ -4,7 +4,7 @@
 } */
 
 
-*, :root {
+*, html, :root {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,13 +21,45 @@ body {
   font-optical-sizing: auto;
   color-scheme: light dark;
   color: rgb(221, 232, 247);
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: none;
 }
 
-.element-with-custom-cursor {
-  cursor: pointer;
-  cursor: cell;
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" width="24" height="24"><circle cx="12" cy="12" r="8"/></svg>'), auto;
+.cursor {
+  z-index: 999;
+  position: fixed;
+  background: #2696E8;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 15px #2696E8,
+              0 0 45px #2696E8,
+              0 0 100px #2696E8;
+  animation: colors 5s infinite;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes colors {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.cursor:before {
+  content: "";
+  position: absolute;
+  background: #2696E8;
+  width: 50px;
+  height: 50px;
+  opacity: 0.2;
+  transform: translate(-30%, -30%);
+  border-radius: 50%;
 }
 
 .home-container {
@@ -53,17 +85,17 @@ section {
 }
 
 #hero {
-  background: linear-gradient(#242424, #343434);
+  background: linear-gradient(#000c22, #071c44);
 }
 
 #about {
-  background: linear-gradient(#343434, #444444);
+  background: linear-gradient(#071c44, #193363);
 }
 
 #projects {
-  background: linear-gradient(#444444, #545454);
+  background: linear-gradient(#193363, #16523e);
 }
 
 #contact {
-  background: linear-gradient(#545454, #646464);
+  background: linear-gradient(#16523e, #164b52);
 }
