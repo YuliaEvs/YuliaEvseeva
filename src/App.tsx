@@ -1,6 +1,6 @@
 import './index.css';
 import Header from './Components/Header';
-import Hero from './Components/Hero';
+import Home from './Components/Home';
 import RunningLine from './Components/RunningLine';
 import Contact from './Components/Contact';
 import Projects from './Components/Projects';
@@ -11,30 +11,12 @@ function App() {
 
   return (
     <>
-      <div className='home-container'>
-        <Header/>
-
-        <section id="hero">
-          <Hero/>
-        </section>
-        
-        <section id='about'>
-          <About/>
-        </section>
-
-        <section id='projects'>
-          <Projects/>
-        </section>
-            
-        <div id='running-line'>
-          <RunningLine/>
-        </div>
-        
-        <section id='contact'>
-          <Contact/>
-        </section>
-        
-      </div>
+      <Header/>
+      <Home/>
+      <About/>
+      <Projects/>
+      <RunningLine/>
+      <Contact/>        
     </>
   )
 }

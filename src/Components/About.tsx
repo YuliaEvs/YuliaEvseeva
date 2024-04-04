@@ -1,4 +1,4 @@
-import coffee from '../assets/coffee-2.1.jpg'
+import aboutImgHero from '../assets/girl987.jpg'
 import './about.css'
 
 
@@ -6,10 +6,10 @@ import './about.css'
 export default function About() {
     
     return (    
-        <div className='about-container'>
-
-            <div className="about-content-container" >
-                <div className="about-text">🛠️ My Toolbox</div>
+        <section className='about section' id='about'>
+            <div className="container flex-center" >
+                
+                {/* <div className="about-text">🛠️ My Toolbox</div>
                 <button className='dropdown-toggle'/>
                     <div className='toggleSubmenu'>
                     JavaScript, C#, Java, REACT, ... 
@@ -39,11 +39,11 @@ export default function About() {
                         <div className='toggleSubmenu'>
                             When I'm not on a quest to squash bugs or decipher cryptic error messages, you might catch me ... 🤔 umm... no, it's all that I am currently doing 😳
                         </div>
-                </div>
+                </div> */}
                 <div className='about-img'>
-                    <img src={coffee} alt="coffee?" />
+                    <img src={aboutImgHero} alt="about-image" />
                 </div>
             </div>
-        </div>    
+        </section>    
     )
 }
