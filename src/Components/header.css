@@ -8,7 +8,12 @@ header {
   transition: .6s ease;
 }
 
-.nav-bar{
+header.sticky {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: var(--box-shadow);
+}
+
+.nav-bar {
   position: relative;
   height: calc(4rem + 1rem);
   max-width: 1250px;
@@ -19,6 +24,10 @@ header {
   margin-right: auto;
   padding: 0 20px;
   transition: .6s ease;
+}
+
+header.sticky .nav-bar{
+  height: calc(2.5rem + 1rem);
 }
 
 /* Logo start */

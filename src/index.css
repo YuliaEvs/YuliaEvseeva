@@ -64,6 +64,22 @@ li {
   list-style: none;
 }
 
+/* Scroll to top button start */
+/* Scroll bar start */
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb-color);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scroll-thumb-hover-color);
+} 
+
 /* Cursor start */
 .cursor {
   z-index: 999;
@@ -105,7 +121,7 @@ li {
 .home {
   width: 100vw;
   height: 100vh;
-  animation: fadeIn 0.5s ease-in forwards;
+  animation: fadeIn 0.6s ease;
 }
 
 @keyframes fadeIn {
@@ -118,3 +134,4 @@ li {
     
   }
 }
+

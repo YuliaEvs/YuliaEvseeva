@@ -1,10 +1,12 @@
 import './index.css';
 import Header from './Components/Header';
 import Home from './Components/Home';
+import About from './Components/About';
+import Skills from './Components/Skills';
 import RunningLine from './Components/RunningLine';
 import Contact from './Components/Contact';
 import Projects from './Components/Projects';
-import About from './Components/About';
+
 
 function App() {
 
@@ -14,6 +16,7 @@ function App() {
       <Header/>
       <Home/>
       <About/>
+      <Skills/>
       <Projects/>
       <RunningLine/>
       <Contact/>        

@@ -2,12 +2,40 @@ import aboutImgHero from '../assets/girl987.jpg'
 import './about.css'
 
 
-
 export default function About() {
     
     return (    
-        <section className='about section' id='about'>
+        <section className="about section" id="about">
             <div className="container flex-center" >
+                <h1 className="section-title-01">About Me</h1>
+                <h2 className="section-title-02">About Me</h2>
+                <div className="content flex-center">
+                    <div className="about-img">
+                        <img src={aboutImgHero} alt="about-image" />
+                    </div>
+                    <div className="about-info">
+                        <div className="description">
+                            <h3>I am Yulia</h3>
+                            <h4>A <span>Software Engineer</span> based in <span>Virginia</span></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente at eos quas, distinctio dolorum aliquam cum corporis necessitatibus, facilis iure minima. Ea debitis nesciunt quisquam amet minus porro sequi fugit?</p>
+                        </div>
+                        <ul className="professional-list">
+                            <li className="list-item">
+                                <h3>5+</h3>
+                                <span>Years of<br/>Experience</span>
+                            </li>
+                            <li className="list-item">
+                                <h3>3K+</h3>
+                                <span>Happy<br/>Customers</span>
+                            </li>
+                            <li className="list-item">
+                                <h3>5+</h3>
+                                <span>Success<br/>Projects</span>
+                            </li>
+                        </ul>
+                        <a href="" className='btn'>Download Resume <i className='fas fa-download'></i></a>
+                    </div>
+                </div>
                 
                 {/* <div className="about-text">🛠️ My Toolbox</div>
                 <button className='dropdown-toggle'/>
@@ -40,9 +68,7 @@ export default function About() {
                             When I'm not on a quest to squash bugs or decipher cryptic error messages, you might catch me ... 🤔 umm... no, it's all that I am currently doing 😳
                         </div>
                 </div> */}
-                <div className='about-img'>
-                    <img src={aboutImgHero} alt="about-image" />
-                </div>
+                
             </div>
         </section>    
     )

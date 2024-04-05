@@ -31,57 +31,57 @@ setInterval(() => {
     return (
         <div className='line-container'>
             <div className="firstLine">
-                <p>
+                <p className='line-item'>
                     CSS
                 </p>
-                <p>
+                <p className='line-item'>
                     JavaScript
                 </p>
-                <p>
+                <p className='line-item'>
                     TypeScript
                 </p>
-                <p>
+                <p className='line-item'>
                     React
                 </p>
 
-                <p>
+                <p className='line-item'>
                     C#
                 </p>
-                <p>
+                <p className='line-item'>
                     Java
                 </p>
-                <p>
+                <p className='line-item'>
                     API
                 </p>
-                <p>
+                <p className='line-item'>
                     and more...
                 </p>
             </div>
 
             <div className="secondLine">
-                <p>
+                <p className='line-item'>
                     CSS
                 </p>
-                <p>
+                <p className='line-item'>
                     JavaScript
                 </p>
-                <p>
+                <p className='line-item'>
                     TypeScript
                 </p>
-                <p>
+                <p className='line-item'>
                     React
                 </p>
 
-                <p>
+                <p className='line-item'>
                     C#
                 </p>
                 <p>
                     Java
-                </p>
-                <p>
+                </p >
+                <p className='line-item'>
                     API
                 </p>
-                <p>
+                <p className='line-item'>
                     and more...
                 </p>
             </div>

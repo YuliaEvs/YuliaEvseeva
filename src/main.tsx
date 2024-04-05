@@ -5,13 +5,16 @@ import './index.css'
 import Preloader from './Components/Preloader.tsx';
 
 
-
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Delay />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
 
+window.addEventListener('scroll', function(){
+  const header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 0);
+});
 
 function Delay() {
   const [show, setShow] = useState(true);
@@ -28,34 +31,34 @@ function Delay() {
 }
 
 
-// const cursor = document.querySelector(".cursor"); //folow cursor on mousemove
-// var timeout;
+const cursor = document.querySelector(".cursor"); //folow cursor on mousemove
+var timeout;
 
-// document.addEventListener('mousemove', (e) => {
-//  let x = e.pageX;
-//  let y = e.pageY;
+document.addEventListener('mousemove', (e) => {
+ let x = e.pageX;
+ let y = e.pageY;
 
-//  cursor.style.top = y + "px";
-//  cursor.style.left = x + "px";
-//  cursor.style.display = "block";
-
-
-// //cursor effects on mouse stopped
-
-// function mouseStopped() {
-//   cursor.style.display = "none";
-// }
-// clearTimeout(timeout);
-// timeout = setTimeout(mouseStopped, 2000);
-// });
-
-// //cursor effects on mouseout
-// document.addEventListener('mouseout', () => {
-//   cursor.style.display = "none";
-//  });
+ cursor.style.top = y + "px";
+ cursor.style.left = x + "px";
+ cursor.style.display = "block";
 
 
-//  const toggleButton = document.querySelector(".dropdown-toggle");
-//  document.addEventListener("click", (ev) =>{
+//cursor effects on mouse stopped
 
-//  })
+function mouseStopped() {
+  cursor.style.display = "none";
+}
+clearTimeout(timeout);
+timeout = setTimeout(mouseStopped, 2000);
+});
+
+//cursor effects on mouseout
+document.addEventListener('mouseout', () => {
+  cursor.style.display = "none";
+ });
+
+
+ const toggleButton = document.querySelector(".dropdown-toggle");
+ document.addEventListener("click", (ev) =>{
+
+ })

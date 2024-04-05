@@ -12,8 +12,8 @@ export default function Hero() {
                     <a href="#"><i className='fab fa-twitter'></i></a>
                 </div>
                 <div className="info">
-                    <h2>Hello and Welcome, Friend! I am Yulia</h2>
-                    <h3>Code Whisperer/Software Engineer</h3>
+                    <h2>Hello and Welcome, Friend!</h2>
+                    <h3> I'm Yulia, Software Engineer</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa illum voluptatum, commodi tempora hic esse repellat dicta id quia iusto ea! Quasi consequuntur rem, facilis corrupti quam saepe eveniet assumenda?
                     </p>
                     <a href="#contact" className='btn'>Contact Me <i className='fas fa-arrow-circle-right'></i></a>

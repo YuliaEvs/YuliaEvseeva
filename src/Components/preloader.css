@@ -5,7 +5,9 @@
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background-color: #242424;
+  background-color: #fff;
+  color: #aaa;
+  font-family: 'Popins', sans-serif;
 }
   
 .preloader-logo-container {
@@ -41,10 +43,8 @@
   
 .logo-letter {
   opacity: 0;
-  font-family: "Big Shoulders Stencil Display", sans-serif;
   font-size: 10rem;
   font-weight: 800;
-  font-style: normal;
   animation: fadeInOut 1.5s ease forwards;
   text-shadow:
     0 1px 0 #ccc,
