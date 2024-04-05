@@ -1,5 +1,5 @@
-import aboutImgHero from '../assets/girl987.jpg'
-import './about.css'
+import aboutImgHero from '../assets/girl987.jpg';
+import './about.css';
 
 
 export default function About() {

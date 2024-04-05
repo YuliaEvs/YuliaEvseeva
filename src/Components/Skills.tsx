@@ -100,7 +100,7 @@ export default function Skills() {
                                 <span>2026-2027</span>
                             </div>
                             <div className="hr"></div>
-                            <h4><label></label></h4>
+                            <h4><label>SpaceX</label></h4>
                             <p>I design and develop services and drink coffee</p>
                         </div>
                         <div className="experience-card">
@@ -110,7 +110,7 @@ export default function Skills() {
                                 <span>2025-2026</span>
                             </div>
                             <div className="hr"></div>
-                            <h4><label></label></h4>
+                            <h4><label>Apple</label></h4>
                             <p>I design and develop services and drink coffee</p>
                         </div>
                         <div className="experience-card">

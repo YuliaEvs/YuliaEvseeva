@@ -39,6 +39,7 @@ export default function Navbar() {
                                     <a href='#about'>ABOUT</a>
                                     <a href='#skills'>SKILLS</a>
                                     <a href='#services'>SERVICES</a>
+                                    <a href='#portfolio'>Portfolio</a>
                                     <a href='#contact'>CONTACT</a>
                                 </div>    
                             {/* }

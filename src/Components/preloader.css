@@ -6,8 +6,6 @@
   width: 100vw;
   overflow: hidden;
   background-color: #fff;
-  color: #aaa;
-  font-family: 'Popins', sans-serif;
 }
   
 .preloader-logo-container {
@@ -15,50 +13,17 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  animation: fallBackDown 1s forwards;
+  color: var(--third-color);
+  font-family: 'Popins', sans-serif;
   animation-timing-function: cubic-bezier(0.1, 0.6, 1, 0); /* Custom cubic-bezier to start slow and end fast */
-  animation: moveToUser 1.5s forwards;
   animation-delay: 1.2s;
   }
-  
-  @keyframes fallBackDown {
-    0% {
-      transform: translateY(0) scale(1);
-    }
-    
-    100% {
-      transform: scale(-1);
-    }
-  }
 
-  @keyframes moveToUser {
-    0% {
-      transform: translateY(0) scale(1);
-    }
-    
-    100% {
-      transform: scale(20);
-    }
-  }
-  
 .logo-letter {
   opacity: 0;
-  font-size: 10rem;
+  font-size: 3rem;
   font-weight: 800;
   animation: fadeInOut 1.5s ease forwards;
-  text-shadow:
-    0 1px 0 #ccc,
-    0 2px 0 #c9c9c9,
-    0 3px 0 #bbb,
-    0 4px 0 #b9b9b9,
-    0 5px 0 #aaa,
-    0 6px 1px rgba(0,0,0,.1),
-    0 0 5px rgba(0,0,0,.1),
-    0 1px 3px rgba(0,0,0,.3),
-    0 3px 5px rgba(0,0,0,.2),
-    0 5px 10px rgba(0,0,0,.25),
-    0 10px 10px rgba(0,0,0,.2),
-    0 20px 20px rgba(0,0,0,.15);
 }
   
 @keyframes fadeInOut {
@@ -95,6 +60,7 @@
   /* i */
   .logo-letter:nth-child(4) {
     animation-delay: 0.09s;
+    color: var(--second-color);
   }
   /* a */
   .logo-letter:nth-child(5) {
@@ -111,14 +77,17 @@
   /* s */
   .logo-letter:nth-child(9) {
     animation-delay: 0.21s;
+    color: var(--second-color);
   }
   /* e */
   .logo-letter:nth-child(10) {
     animation-delay: 0.24s;
+    color: var(--second-color);
   }
   /* e */
   .logo-letter:nth-child(11) {
     animation-delay: 0.27s;
+    color: var(--second-color);
   }
   /* v */
   .logo-letter:nth-child(12) {
