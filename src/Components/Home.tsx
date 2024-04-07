@@ -7,12 +7,12 @@ export default function Hero() {
         <section className="home flex-center" id='home'>
             <div className='home-container'>
                 <div className="media-icons">
-                    <a href="#"><i className='fab fa-linkedin'></i></a>
-                    <a href="#"><i className='fab fa-facebook-f'></i></a>
-                    <a href="#"><i className='fab fa-twitter'></i></a>
+                    <a href="https://www.linkedin.com/in/yulia-evseeva/"><i className='fab fa-linkedin'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100002105156155"><i className='fab fa-facebook-f'></i></a>
+                    <a href="https://twitter.com/YuliaEvsevsa"><i className='fab fa-twitter'></i></a>
                 </div>
                 <div className="info">
-                    <h2>Hello and Welcome, Friend!</h2>
+                    <h2>Hello and Welcome!</h2>
                     <h3> I'm Yulia, Software Engineer</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa illum voluptatum, commodi tempora hic esse repellat dicta id quia iusto ea! Quasi consequuntur rem, facilis corrupti quam saepe eveniet assumenda?
                     </p>

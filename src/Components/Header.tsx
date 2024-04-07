@@ -35,11 +35,11 @@ export default function Navbar() {
                         <div className='sidebar' style={{display: isMenuOpen ? 'block' : 'none'}}>
                             {    */}
                                 <div className='nav-items'>
-                                    <a href='#hero'>HOME</a>
+                                    <a href='#home'>HOME</a>
                                     <a href='#about'>ABOUT</a>
                                     <a href='#skills'>SKILLS</a>
                                     <a href='#services'>SERVICES</a>
-                                    <a href='#portfolio'>Portfolio</a>
+                                    <a href='#portfolio'>PORTFOLIO</a>
                                     <a href='#contact'>CONTACT</a>
                                 </div>    
                             {/* }

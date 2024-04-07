@@ -1,6 +1,6 @@
 import './contact.css';
 
-export default function Footer() {
+export default function Contact() {
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }

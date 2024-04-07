@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* @media () {
+@media screen and (max-width: 1070px) {
 
-} */
+}
+
 :root {
 /* Main theme colors */
 --first-color: #0e2431;
---second-color: #6a59d1;
+--second-color: #1e9ea7;
 --third-color: #777;
 
 /* Hover colors */
---hover-color: #614fd0;
+--hover-color: #22b6c0;
 
 /* Background colors */
 --body-bg-color: #fefefe;
@@ -82,16 +83,13 @@ li {
 
 /* Cursor start */
 .cursor {
-  z-index: 999;
+  z-index: 99999;
   position: fixed;
-  background: #2696E8;
-  width: 15px;
-  height: 15px;
+  background: transparent;
+  width: 1px;
+  height: 1px;
   border-radius: 50%;
   pointer-events: none;
-  box-shadow: 0 0 15px #2696E8,
-              0 0 45px #2696E8,
-              0 0 100px #2696E8;
   animation: colors 5s infinite;
   transform: translate(-50%, -50%);
 }
@@ -108,10 +106,10 @@ li {
 .cursor:before {
   content: "";
   position: absolute;
-  background: #2696E8;
-  width: 35px;
-  height: 35px;
-  opacity: 0.2;
+  background: rgb(38, 150, 232);
+  width: 45px;
+  height: 45px;
+  opacity: .2;
   transform: translate(-30%, -30%);
   border-radius: 50%;
 }
@@ -121,7 +119,7 @@ li {
 .home {
   width: 100vw;
   height: 100vh;
-  animation: fadeIn 0.6s ease;
+  animation: fadeIn .3s ease;
 }
 
 @keyframes fadeIn {

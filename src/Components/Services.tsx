@@ -1,4 +1,5 @@
 import './services.css'
+import '../main'
 
 export default function Projects() {
     return (
