@@ -1,7 +1,32 @@
 import './services.css'
 import '../main'
 
-export default function Projects() {
+//Services section - Modal
+const serviceModals = document.querySelectorAll(".service-modal");
+const learnmoreBtns = document.querySelectorAll(".learn-more-btn");
+const modalCloseBtns = document.querySelectorAll(".modal-close-btn");
+
+const openModal = (modalClick: number) => {
+  if (serviceModals[modalClick]) {
+    serviceModals[modalClick].classList.add("active");
+  }
+};
+
+learnmoreBtns.forEach((learnmoreBtn, i) => {
+  learnmoreBtn.addEventListener("click", () => {
+    openModal(i);
+  });
+});
+
+modalCloseBtns.forEach((modalCloseBtn) => {
+  modalCloseBtn.addEventListener("click", () => {
+    serviceModals.forEach((modalView) => {
+      modalView.classList.remove("active");
+    });
+  });
+});
+
+export default function Services() {
     return (
         <section className='services section' id='services'>
             <div className="container flex-center">

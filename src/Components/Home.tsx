@@ -1,10 +1,26 @@
 import './home.css';
 import hero from '../assets/girl987.jpg'
 
-export default function Hero() {
+//Scroll to top button
+const globeScrollDown = document.querySelector(".globe-wrap") as HTMLElement | null; 
+
+window.addEventListener("globeScroll", function() {
+    globeScrollDown?.classList.toggle("active", window.scrollY < 500);
+});
+
+export default function Home() {
     
     return (
         <section className="home flex-center" id='home'>
+            <div className="globe-wrap">
+                <div className="globe"></div>
+                    <div className="location-wrap">
+                        <div className='locationName'>
+                            <span>Virginia</span>
+                            <span>USA</span>
+                        </div>
+                </div>
+            </div>
             <div className='home-container'>
                 <div className="media-icons">
                     <a href="https://www.linkedin.com/in/yulia-evseeva/"><i className='fab fa-linkedin'></i></a>
@@ -19,20 +35,11 @@ export default function Hero() {
                     <a href="#contact" className='btn'>Contact Me <i className='fas fa-arrow-circle-right'></i></a>
                 </div> 
                 <div className="home-img">
-                    <img src={hero} alt="hero-image" />
+                    <img src={hero} alt="home-image" />
                 </div> 
             </div>
-            <a href="#about" className='scroll-down'>Scroll Down<i className='fas fa-arrow-down'></i></a>
+            <a href="#about" className='scroll-down'>Scroll Down <i className='fas fa-arrow-down'></i></a>
         </section>
     )
 }
 
-            {/* <div className="globe-wrap">
-                    <div className="globe"></div>
-                    <div className="location-wrap">
-                        <div className='locationName'>
-                            <span>Virginia</span>
-                            <span>USA</span>
-                        </div>
-                    </div>
-                </div> */}

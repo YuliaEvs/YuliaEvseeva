@@ -1,8 +1,16 @@
 import './header.css';
-import { useState } from 'react';
-import profile from '../assets/preview (5).webp'
+// import { useState } from 'react';
+// import profile from '../assets/preview (5).webp'
 
 export default function Navbar() {
+
+    //Navigation bar effects on scroll
+ window.addEventListener("scroll", () => {
+  const header = document.querySelector("header") as HTMLElement | null;
+  if (header) {
+  header.classList.toggle("sticky", window.scrollY > 0);
+  }
+});
     // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     // function handleMenu() {
@@ -20,33 +28,14 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className='navigation'>
-                    {/* <div className="changeMode">
-                        <button className='lamp'>
-                            <span className="material-symbols-rounded">light</span>
-                        </button>
-                    </div> */}
-                        {/* <div className='nav-burger' onClick={handleMenu}>
-                        
-                            <div className={`nav-burger-wrap ${isMenuOpen ? 'active' : ""}`}>
-                                <div className='burger-line-1'></div>
-                                <div className='burger-line-2'></div>
-                            </div>
-
-                        <div className='sidebar' style={{display: isMenuOpen ? 'block' : 'none'}}>
-                            {    */}
-                                <div className='nav-items'>
-                                    <a href='#home'>HOME</a>
-                                    <a href='#about'>ABOUT</a>
-                                    <a href='#skills'>SKILLS</a>
-                                    <a href='#services'>SERVICES</a>
-                                    <a href='#portfolio'>PORTFOLIO</a>
-                                    <a href='#contact'>CONTACT</a>
-                                </div>    
-                            {/* }
-                        </div>
-
-                    </div>  */}
-
+                    <div className='nav-items'>
+                        <a  className="active" href='#home'>HOME</a>
+                        <a href='#about'>ABOUT</a>
+                        <a href='#skills'>SKILLS</a>
+                        <a href='#services'>SERVICES</a>
+                        <a href='#portfolio'>PORTFOLIO</a>
+                        <a href='#contact'>CONTACT</a>
+                    </div>    
                 </div>
             </div>
         </header>
