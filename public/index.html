@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web-portfolio"/>
+        
+    <title>Yulia Evseeva</title>
+
+    <link rel="stylesheet" href="/src/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">     
+
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- Scroll To Top Button -->
+    <div class="scrollToTop-btn flex-center">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Light/Dark Theme Button -->
+    <div class="theme-btn flex-center">
+      <i class='fas fa-moon'></i>
+      <i class='fas fa-sun'></i>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="nav-bar">
+            <a href="#" class="logo"></a>
+            <div class="navigation">
+              <div class="nav-items">
+                <div class="nav-close-btn">
+                    <i class="fa-regular fa-rectangle-xmark"></i>
+                </div>
+                <a  class="active" href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#services">SERVICES</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contact">CONTACT</a>
+              </div>    
+            </div>
+            <div class="nav-menu-btn">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+    </header>
+  <!-- Header end -->
+  <!-- Home Section start -->
+    <section class="home flex-center" id="home">
+        <div class="home-container">
+            <div class="media-icons">
+                <a href="https://www.linkedin.com/in/yulia-evseeva/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100002105156155"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/YuliaEvsevsa"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="info">
+                <h2>Hey there!</h2>
+                <h3> Welcome, my friend! Thanks for checking my Porfolio Website!</h3>
+                <p></p>
+                <a href="#contact" class="btn">Get in touch <i class="fas fa-arrow-circle-right"></i></a>
+            </div> 
+            <div class="home-img">
+                <img src="/assets/girl987.jpg" alt="home-image" />
+            </div> 
+        </div>
+        <a href="#about" class="scroll-down">Scroll Down <i class="fas fa-arrow-down"></i></a>
+    </section>
+    <!-- Home Section end -->
+    <!-- About Section start -->
+    <section class="about section" id="about">
+        <div class="container flex-center" >
+            <h1 class="section-title-01">About Me</h1>
+            <h2 class="section-title-02">About Me</h2>
+            <div class="content flex-center">
+                <div class="about-img">
+                    <img src="/assets/girl987.jpg" alt="about-image" />
+                </div>
+                <div class="about-info">
+                    <div class="description">
+                        <h3>I'm Yulia Evseeva</h3>
+                        <h4>A <span>Software Engineer</span> based in <span>Virginia</span></h4>
+                        <p>Dedicated and detail-oriented Software Engineer with a solid foundation in JavaScript, React, C#, Java, and database
+                            management. Integrating skills from my marketing and HR background, I am adept at collaborating with cross-functional teams
+                            to deliver high-quality, scalable solutions.</p>
+                    </div>
+                    <ul class="professional-list">
+                        <li class="list-item">
+                            <h3>2+</h3>
+                            <span>Years of<br/>Experience</span>
+                        </li>
+                        <li class="list-item">
+                            <h3>10+</h3>
+                            <span>Success<br/>Projects</span>
+                        </li>
+                        <li class="list-item">
+                            <h3>3+</h3>
+                            <span>Certificates<br/></span>
+                        </li>
+                    </ul>
+                    <a href="{require(/public/1pRESUME_YuliaEvseevaWeb.pdf)}" class='btn' download="resume">Download Resume <i class='fas fa-download'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section end -->
+    <!-- Skills Section start -->
+    <section class="skills section" id="skills">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Skills</h1>
+            <h2 class="section-title-02">Skills</h1>
+             <div class="content">
+                <div class="skills-description">
+                    <h3>Education & Skills</h3>
+                    <p>Languages: JavaScript, C#, JAVA, TypeScript<br/>
+                        Front-End: HTML5, CSS, React, Angular, Bootstrap<br/>
+                        Back-End: .NET, Express JS, Node JS, JWT /JSON, MongoDB, SQL, REST API, CSRF, XSS</p>
+                </div>
+                <div class="skills-info education-all">
+                    <div class="education">
+                        <h4><label>Education</label></h4>
+                        <ul class="edu-list">
+                            <li class="item">
+                                <span class='year'>03/2024 - current</span>
+                                <p><span>Java Developer</span> - Javarush Bootcamp</p>
+                            </li>
+                            <li class="item">
+                                <span class='year'>07/2023 - 11/2023</span>
+                                <p><span>Back-End Web Developer</span> - Microsoft Bootcamp</p>
+                            </li>
+                            <li class="item">
+                                <span class='year'>12/2022 - 06/2023</span>
+                                <p><span>Full-Stack Web Developer</span> - UDEMY Bootcamp</p>
+                            </li>
+                            <li class="item">
+                                <span class='year'>07/2022 - 11/2022</span>
+                                <p><span>Software Enginee</span> - Per Scholas Bootcamp</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="education">
+                        <h4><label>Skills</label></h4>
+                        <ul class="bars">
+                            <li class="bar">
+                                <div class="info">
+                                    <span>HTML</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="line html"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>CSS</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="line css"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>JavaScript</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="line javascript"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>C#</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="line csharp"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>Java</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="line java"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="education">
+                        <h4><label>Awards</label></h4>
+                        <ul class="edu-list">
+                            <li class="item">
+                                <span class='year'>2027</span>
+                                <p><span>Best Developer</span></p>
+                            </li>
+                            <li class="item">
+                                <span class='year'>2026</span>
+                                <p><span>Best Software Engineer</span></p>
+                            </li>
+                            <li class="item">
+                                <span class='year'>2025</span>
+                                <p><span>Best Freelancer</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills-description">
+                    <h3>Work & Experience</h3>
+                </div>
+                <div class="skills-info">
+                    <div class="experience-card">
+                        <div class="upper">
+                            <h3>Back-End Developer</h3>
+                            <h5>Full Time / Remote</h5>
+                            <span>2023-2024</span>
+                        </div>
+                        <div class="hr"></div>
+                        <h4><label>Self-Employed</label></h4>
+                        <p>Comunity Online Library</p>
+                    </div>
+                    <div class="experience-card">
+                        <div class="upper">
+                            <h3>Full-Stack Developer</h3>
+                            <h5>Full Time / Remote</h5>
+                            <span>2023-2024</span>
+                        </div>
+                        <div class="hr"></div>
+                        <h4><label>Self-Employed</label></h4>
+                        <p>Online Art Galary</p>
+                    </div>
+                    <div class="experience-card">
+                        <div class="upper">
+                            <h3>Front-End Developer</h3>
+                            <h5>Full Time / Remote</h5>
+                            <span>2022-2023</span>
+                        </div>
+                        <div class="hr"></div>
+                        <h4><label>Self-Employed</label></h4>
+                        <p>Travel Application</p>
+                    </div>
+                </div>
+             </div>   
+        </div>
+    </section>
+    <!-- Skills Section end -->
+
+    <!-- Services Section start -->
+    <section class='services section' id='services'>
+        <div class="container flex-center">
+            <h1 class="section-title-01">Services</h1>
+            <h2 class="section-title-02">Services</h2>
+            <div class="content">
+                <div class="services-description">
+                    <h3>What I Provide</h3>
+                </div>
+                <ul class="service-list">
+                    <li class="service-container">
+                        <div class="service-card">
+                            <i class='fas fa-pencil-ruler'></i>
+                            <h3>UX Design</h3>
+                            <div class="learn-more-btn">Learn More <i class='fas fa-long-arrow-alt-right'></i>
+                            </div>
+                        </div>
+                        <div class="service-modal flex-center">
+                            <div class="service-modal-body">
+                                <i class='fas fa-times modal-close-btn'></i>
+                                <h3>UX Design</h3>
+                                <h4>What is UX?</h4>
+                                <p>UX consulting helps companies improve their product's overall usability and optimaze expenses by implementing the right UX processes, methods, and tools.</p>
+                                <h4>What I provide</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i>Establish the right UX processes</li>
+                                    <li><i class="fas fa-check-circle"></i>Create exceptional user experiences</li>
+                                    <li><i class="fas fa-check-circle"></i>Discover new business opportunities</li>
+                                    <li><i class="fas fa-check-circle"></i>Save resources</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-container">
+                        <div class="service-card">
+                            <i class="fa-solid fa-sitemap"></i>
+                            <h3>Software Development</h3>
+                            <div class="learn-more-btn">Learn More <i class='fas fa-long-arrow-alt-right'></i>
+                            </div>
+                        </div>
+                        <div class="service-modal flex-center">
+                            <div class="service-modal-body">
+                                <i class='fas fa-times modal-close-btn'></i>
+                                <h3>Software Development</h3>
+                                <h4>What is Software Development?</h4>
+                                <p>Brand Design can be defined as one of the crucial marketing practices of creating the name, logo, design, and the symbolic elements related to the brand to create a distinctive identity in comparison to the other brands in the market and also providing impetus to the product differentiation.</p>
+                                <h4>What I provide</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i>Logo Design</li>
+                                    <li><i class="fas fa-check-circle"></i>Banner Design</li>
+                                    <li><i class="fas fa-check-circle"></i>VisualIdentity Packages</li>
+                                    <li><i class="fas fa-check-circle"></i>Business Cards & Business Systems</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-container">
+                        <div class="service-card">
+                            <i class='fas fa-file-code'></i>
+                            <h3>Web Development</h3>
+                            <div class="learn-more-btn">Learn More <i class='fas fa-long-arrow-alt-right'></i>
+                            </div>
+                        </div>
+                        <div class="service-modal flex-center">
+                            <div class="service-modal-body">
+                                <i class='fas fa-times modal-close-btn'></i>
+                                <h3>Web Development</h3>
+                                <h4>What is Web Development?</h4>
+                                <p>Web Development services are used to design, build, support, and evolve all types of web-based software.</p>
+                                <h4>What I provide</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i>Web application development</li>
+                                    <li><i class="fas fa-check-circle"></i>Testing</li>
+                                    <li><i class="fas fa-check-circle"></i>Maintenance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-container">
+                        <div class="service-card">
+                            <i class="fa-solid fa-bug-slash"></i>
+                            <h3>Testing</h3>
+                            <div class="learn-more-btn">Learn More <i class='fas fa-long-arrow-alt-right'></i>
+                            </div>
+                        </div>
+                        <div class="service-modal flex-center">
+                            <div class="service-modal-body">
+                                <i class='fas fa-times modal-close-btn'></i>
+                                <h3>Software Testing</h3>
+                                <h4>What is Testing?</h4>
+                                <p>Testing ensures the quality and functionality of software</p>
+                                <h4>What I provide</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i>identify and document bugs, conduct usability tests, and validate that the product meets requirements</li>
+                                    <li><i class="fas fa-check-circle"></i>Testing</li>
+                                    <li><i class="fas fa-check-circle"></i>Maintenance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section end -->
+
+    <!-- Portfolio Section start -->
+    <section class='portfolio section' id='portfolio'>
+        <div class="container flex-center">
+            <h1 class="section-title-01">Portfolio</h1>
+            <h2 class="section-title-02">Portfolio</h2>
+            <div class="content">
+                <div class="portfolio-list">
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <h3>Online Library</h3>
+                                <span>Java</span>
+                            </div>
+                            <img src="/assets/portfolio-1.jpg" alt="" />
+                        </div>
+                        <div class="portfolio-model flex-center">
+                            <div class="portfolio-model-body">
+                                <i class='fas fa-times portfolio-close-btn'></i>
+                                <h3>Online Library</h3>
+                                <img src="/assets/portfolio-1.jpg" alt="" />
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas dignissimos facilis a amet cumque corporis, ea distinctio hic inventore quos voluptatibus aliquam architecto. Praesentium, ab ipsa aspernatur reprehenderit iusto cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <h3>Travel App</h3>
+                                <span>React</span>
+                            </div>
+                            <img src="/assets/portfolio-2.jpg" alt="" />
+                        </div>
+                        <div class="portfolio-model flex-center">
+                            <div class="portfolio-model-body">
+                                <i class='fas fa-times portfolio-close-btn'></i>
+                                <h3>Travel App</h3>
+                                <img src="/assets/portfolio-2.jpg" alt="" />
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas dignissimos facilis a amet cumque corporis, ea distinctio hic inventore quos voluptatibus aliquam architecto. Praesentium, ab ipsa aspernatur reprehenderit iusto cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <h3>Art Galary</h3>
+                                <span>C#</span>
+                            </div>
+                            <img src="/assets/portfolio-3.jpg" alt="" />
+                        </div>
+                        <div class="portfolio-model flex-center">
+                            <div class="portfolio-model-body">
+                                <i class='fas fa-times portfolio-close-btn'></i>
+                                <h3>Art Galary</h3>
+                                <img src="/assets/portfolio-3.jpg" alt="" />
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas dignissimos facilis a amet cumque corporis, ea distinctio hic inventore quos voluptatibus aliquam architecto. Praesentium, ab ipsa aspernatur reprehenderit iusto cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <h3>Dev Shop</h3>
+                                <span>Java</span>
+                            </div>
+                            <img src="/assets/portfolio-4.jpg" alt="" />
+                        </div>
+                        <div class="portfolio-model flex-center">
+                            <div class="portfolio-model-body">
+                                <i class='fas fa-times portfolio-close-btn'></i>
+                                <h3>Dev Shop</h3>
+                                <img src="/assets/portfolio-4.jpg" alt="" />
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas dignissimos facilis a amet cumque corporis, ea distinctio hic inventore quos voluptatibus aliquam architecto. Praesentium, ab ipsa aspernatur reprehenderit iusto cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <h3>Animal Shelter</h3>
+                                <span>JavaScript</span>
+                            </div>
+                            <img src="/assets/portfolio-5.jpg" alt="" />
+                        </div>
+                        <div class="portfolio-model flex-center">
+                            <div class="portfolio-model-body">
+                                <i class='fas fa-times portfolio-close-btn'></i>
+                                <h3>Animal Shelter</h3>
+                                <img src="/assets/portfolio-5.jpg" alt="" />
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas dignissimos facilis a amet cumque corporis, ea distinctio hic inventore quos voluptatibus aliquam architecto. Praesentium, ab ipsa aspernatur reprehenderit iusto cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <h3>Blog</h3>
+                                <span>React</span>
+                            </div>
+                            <img src="/assets/portfolio-6.jpg" alt="" />
+                        </div>
+                        <div class="portfolio-model flex-center">
+                            <div class="portfolio-model-body">
+                                <i class='fas fa-times portfolio-close-btn'></i>
+                                <h3>Blog</h3>
+                                <img src="/assets/portfolio-6.jpg" alt="" />
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas dignissimos facilis a amet cumque corporis, ea distinctio hic inventore quos voluptatibus aliquam architecto. Praesentium, ab ipsa aspernatur reprehenderit iusto cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section end -->
+
+    <!-- Contact Section start -->
+    <section class="contact section" id='contact'>
+        <div class="container flex-center">
+          <h1 class='section-title-01'>Contact Me</h1>
+          <h2 class='section-title-02'>Contact Me</h2>
+          <div class="content">
+            <div class="contact-left">
+              <h2>Let's work together</h2>
+              <ul class="contact-list">
+                <li>
+                  <h3 class='item-title'><i class='fas fa-phone'></i>Phone</h3>
+                  <span>+1(703)829-7010</span>
+                </li>
+                <li>
+                  <h3 class='item-title'><i class='fas fa-envelope'></i>Email Address</h3>
+                  <span><a href="mailto:info.evseeva@gmail.com">info.evseeva@gmail.com</a></span>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="contact-right">
+                <form action="" class='contact-form'>
+                <div class="first-row">
+                  <input type="text" placeholder='Name'/>
+                </div>
+                <div class="second-row">
+                  <input type="email" placeholder='Email'/>
+                  <input type="text" placeholder='Subject'/>
+                </div>
+                <div class="third-row">
+                  <textarea name="message" id="" rows={7} placeholder='Message'></textarea>
+                </div>
+                <button class='btn' type='submit'>Send Message <i class='fas fa-paper-plane'></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Contact Section end -->
+
+    <!-- Footer Section start -->
+    <footer>
+        <div class="footer-container">
+            <div class="about group">
+                <h2><a href="#about">Yulia Evseeva</a></h2>
+            </div>
+            <div class="hr"></div>
+            <div class="info group">
+                <ul>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="follow group">
+                 <ul>
+                    <li><a href=""><i class='fab fa-facebook'></i></a></li>
+                    <li><a href=""><i class='fab fa-linkedin'></i></a></li>
+                    <li><a href=""><i class='fab fa-twitter'></i></a></li>
+                </ul>
+            </div>
+            </div>
+        <div class="footer-copyright group">
+            <p>© 2024 by Yulia Evseeva. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+    <script src="/src/App.js"></script>
+    
+  </body>
+</html>
