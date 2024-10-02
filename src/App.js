@@ -56,26 +56,65 @@ function App() {
   });
 
 //Website Dark/Light Theme
-const themeBtn = document.querySelector(".theme-btn");
+// const themeBtn = document.querySelector(".theme-btn");
 
-themeBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark-theme");
-  themeBtn.classList.toggle("sun");
+// themeBtn.addEventListener("click", () => {
+//   console.log("Button clicked"); // for debugging
+//   document.body.classList.toggle("dark-theme");
+//   themeBtn.classList.toggle("sun");
 
-  localStorage.setItem("saved-theme", getCurrentTheme());
-  localStorage.setItem("saved-icon", getCurrentIcon());
+//   localStorage.setItem("saved-theme", getCurrentTheme());
+//   localStorage.setItem("saved-icon", getCurrentIcon());
+// });
+
+// const getCurrentTheme = () => document.body.classList.contains("dark-theme") ? "dark" : "light";
+// const getCurrentIcon = () => themeBtn.classList.contains("sun") ? "sun" : "moon";
+
+// const savedTheme = localStorage.getItem("saved-theme");
+// const savedIcon = localStorage.getItem("saved-icon");
+
+// if(savedTheme) {
+//   document.body.classList[savedTheme === "dark" ? "add" : "remove"]("dark-theme");
+//   themeBtn.classList[savedIcon === "sun" ? "add" : "remove"] ("sun");
+// }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const themeBtn = document.querySelector(".theme-btn");
+
+  // Toggle theme and icon on button click
+  themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+    themeBtn.classList.toggle("sun");  // Toggle the sun class for icon change
+
+    // Save the current theme and icon state
+    localStorage.setItem("saved-theme", getCurrentTheme());
+    localStorage.setItem("saved-icon", getCurrentIcon());
+  });
+
+  // Function to get current theme (dark or light)
+  const getCurrentTheme = () => document.body.classList.contains("dark-theme") ? "dark" : "light";
+  
+  // Function to get current icon (sun or moon)
+  const getCurrentIcon = () => themeBtn.classList.contains("sun") ? "sun" : "moon";
+
+  // Retrieve saved theme and icon from localStorage
+  const savedTheme = localStorage.getItem("saved-theme");
+  const savedIcon = localStorage.getItem("saved-icon");
+
+  // Apply saved theme and icon if they exist
+  if (savedTheme) {
+    document.body.classList[savedTheme === "dark" ? "add" : "remove"]("dark-theme");
+    themeBtn.classList[savedIcon === "sun" ? "add" : "remove"]("sun");
+  } else {
+    // Default to dark theme and sun icon
+    document.body.classList.add("dark-theme");
+    themeBtn.classList.add("sun");
+    localStorage.setItem("saved-theme", "dark");
+    localStorage.setItem("saved-icon", "sun");
+  }
 });
 
-const getCurrentTheme = () => document.body.classList.contains("dark-theme") ? "dark" : "light";
-const getCurrentIcon = () => themeBtn.classList.contains("sun") ? "sun" : "moon";
 
-const savedTheme = localStorage.getItem("saved-theme");
-const savedIcon = localStorage.getItem("saved-icon");
-
-if(savedTheme) {
-  document.body.classList[savedTheme === "dark" ? "add" : "remove"]("dark-theme");
-  themeBtn.classList[savedIcon === "sun" ? "add" : "remove"] ("sun");
-}
 
 //Scroll To Top Button
   const scrollToTopBtn = document.querySelector(".scrollToTop-btn"); 
