@@ -2,12 +2,44 @@
 
 :root {
   /* Main theme colors */
-  --first-color: #0e2431;
-  --second-color: #1e9ea7;
-  --third-color: #777;
   
+  --first-color: #fff;
+  --second-color: #1e9ea7;
+  --third-color: #a9afc3;
+
   /* Hover colors */
   --hover-color: #22b6c0;
+  
+  /* Background colors */
+  --body-bg-color: #0e1b31;
+  --card-bg-color: #132347;
+  --modal-bg-color: #102048;
+  --bg-transparent-color: rgba(255, 255, 255, 0.1);
+  --transparent-color-01: rgba(255, 255, 255, 0.1);
+  --line-color: #454f6b;
+  
+  /* Color Filter */
+  --color-filter: invert(0);
+ 
+  /* Box Shadow */
+  --box-shadow: 0 0 20px rgba(0 0 0 / 10%);
+  
+  /* Font Size */
+  --small-font-size: 0.9em;
+  --normal-font-size: 1em;
+  
+  /* Scroll Bar Colors */
+  --scroll-bar-color: #c1ceff;
+  --scroll-thumb-color: #282f4e;
+  --scroll-thumb-hover-color: #454f6b;
+  
+}
+  
+.bright-theme {
+  /* Main theme colors */
+  --first-color: #fff;
+  --second-color: #1e9ea7;
+  --third-color: #a9afc3;
   
   /* Background colors */
   --body-bg-color: #fefefe;
@@ -17,45 +49,15 @@
   --transparent-color-01: rgba(0, 0, 0, 0.1);
   --transparent-color-02: rgba(30, 158, 167, 0.1);
   --line-color: #7d7d7d;
-  
+    
   /* Color Filter */
   --color-filter: invert(1);
-  
-  /* Box Shadow */
-  --box-shadow: 0 0 20px rgba(0 0 0 / 10%);
-  
-  /* Font Size */
-  --small-font-size: 0.9em;
-  --normal-font-size: 1em;
-  
+       
   /* Scroll Bar Colors */
   --scroll-bar-color: #c5cadf;
   --scroll-thumb-color: #70768a;
   --scroll-thumb-hover-color: #454f6b;
   
-}
-  
-.dark-theme {
-  /* Main theme colors */
-  --first-color: #fff;
-  --second-color: #1e9ea7;
-  --third-color: #a9afc3;
-  
-  /* Background colors */
-  --body-bg-color: #0e1b31;
-  --card-bg-color: #132347;
-  --modal-bg-color: #102048;
-  --bg-transparent-color: rgba(255, 255, 255, 0.1);
-  --transparent-color-01: rgba(255, 255, 255, 0.1);
-  --line-color: #454f6b;
-    
-  /* Color Filter */
-  --color-filter: invert(0);
-       
-  /* Scroll Bar Colors */
-  --scroll-bar-color: #c1ceff;
-  --scroll-thumb-color: #282f4e;
-  --scroll-thumb-hover-color: #454f6b;
 }
 
 /* Light/Dark Theme Button */
@@ -74,11 +76,11 @@
   cursor: pointer;
 }
 
-.theme-btn .fa-sun, .theme-btn.sun .fa-moon {
+.theme-btn .fa-moon, .theme-btn.moon .fa-sun {
   display: none;
 }
 
-.theme-btn.sun .fa-sun {
+.theme-btn.moon .fa-moon {
   display: block;
 }
   
@@ -555,24 +557,24 @@ background: var(--hover-color);
   border-radius: 2px;
 } 
 
-.bar .html:before {
-  width: 95%;
-}
-
-.bar .css:before {
-  width: 95%;
+.bar .java:before {
+  width: 75%;
 }
 
 .bar .javascript:before {
-  width: 95%;
+  width: 70%;
 }
 
 .bar .csharp:before {
-  width: 95%;
+  width: 50%;
 }
 
-.bar .java:before {
-  width: 95%;
+.bar .python:before {
+  width: 20%;
+}
+
+.bar .angular:before {
+  width: 85%;
 }
 
 .experience-card {
